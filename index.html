@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>unit-4-game</title>
 </head>
+
 <body>
-<h1 class="header">Crytal Collector!</h1>
+    <h1 class="header">Crystal Collector!</h1>
 
-<div class="randomNumber"></div>
-   <div class="scoreWrap">
-    <div class="wins"></div>
-    <div class="losses"></div>
-</div>
+    <div class="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four systals below. By clicking on a crystal you will add a specific amount of points to your total
+            score.</p>
+        <p>You win the game by matching your total score to random number, you lost the game if your total score goes
+            about the random nyumber.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the fame starts, the game will change the values of each crystal</p>
+    </div>
 
-<div class="buttons">
-    <div class="button1">1</div>
-    <div class="button2">2</div>
-    <div class="button3">3</div>
-    <div class="button4">4</div>   
-</div>
+    <div class="container">
+        <div class="randomNumber"></div>
+        <div class="scoreWrap">
+            <div class="wins"></div>
+            <div class="losses"></div>
+        </div>
+    </div>
 
-<p class="scoretext">Your total score is:</p>
+    <div class="buttons">
+        <div class="btnContainer">
+            <img class="button1" src="./assets/images/crystal1.jpg" alt="crystal 1">
+        </div>
 
-<div class="userscore"></div>
+        <div class="btnContainer">
+            <img class="button2" src="./assets/images/crystal2.jpg" alt="crystal 2">
+        </div>
 
-    <script src="./game.js"></script>
+        <div class="btnContainer">
+            <img class="button3" src="./assets/images/crystal3.jpeg" alt="crystal 3">
+        </div>
+
+        <div class="btnContainer">
+            <img class="button4" src="./assets/images/crystal4.jpeg" alt="crystal 4">
+        </div>
+    </div>
+
+    <p class="scoretext">Your total score is:</p>
+
+    <div class="userscore"></div>
+
+    <script src="../unit-4-game/assets/javascript/game.js"></script>
 </body>
+
 </html>

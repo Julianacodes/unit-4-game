@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/morocco.png");
+
+}
+
+.header {
+    background: #c86f36;
+    width: 20%;
+    padding: 20px;
+    color: #fceacd;
+
+}
+.instructions {
+    background-color: #fceacd;
+    width: 35%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    color: #89aa74;
+    font-weight: bold;
+}
+.randomNumber {
+    background: #57c987;
+    width: 15%;
+    padding-right: 20px;
+    font-size: 45px;
+    padding-bottom: 60px;
+    margin-top: 25px;
+}
+
+.scoreWrap {
+    background: #6efef9;
+    width: 10%;
+}
+
+.buttons {
+    /* float: left; */
+    display: flex;
+    
+
+}
+
+.container {
+    display: flex;
+}
+
+.userscore {
+    background: #57c987;
+    color: white;
+    width: 15%;
+    padding-right: 20px;
+    font-size: 45px;
+    padding-bottom: 60px;
+    margin-top: 25px;
+    
+}
+.btnContainer{
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    margin-right: 3px;
+}
