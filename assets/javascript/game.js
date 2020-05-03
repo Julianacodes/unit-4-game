@@ -1,4 +1,4 @@
-// 1) WE need to set a random number
+
 
 var wins = 0;
 var losses = 0;
@@ -19,7 +19,7 @@ var userScore =document.querySelector(".userscore")
 
 
 function start(){
-    mathRandom = Math.floor(Math.random() * 55) + 40;
+    mathRandom = Math.floor(Math.random() * 80) + 40;
     score = 0
     crystal1.setAttribute("value", Math.floor(Math.random() * 5));
     crystal2.setAttribute("value", Math.floor(Math.random() * 5));
@@ -38,7 +38,7 @@ function renderWinsAndLosses(){
     htmlLosses.innerHTML = "Losses : " + losses
     htmlWins.innerHTML = "Wins : " + wins
     randomNumber.innerHTML = "" + mathRandom
-    scoreText.innerHTML= " Your Score So Far : " 
+    scoreText.innerHTML= " Your total score is : " 
     userScore.innerHTML = "" + score
 
 }
@@ -69,7 +69,7 @@ buttondDiv.addEventListener("click", function (event) {
 
 
 
-
+// 1) WE need to set a random number
 
 
 
