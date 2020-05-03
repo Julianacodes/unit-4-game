@@ -26,11 +26,19 @@ body {
     font-size: 45px;
     padding-bottom: 60px;
     margin-top: 25px;
+    padding-left: 5px;
+   
 }
 
 .scoreWrap {
     background: #6efef9;
     width: 10%;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 200%;
+    margin-top: 25px;
+    margin-left: 10px;
+    
 }
 
 .buttons {
@@ -45,19 +53,31 @@ body {
 }
 
 .userscore {
-    background: #57c987;
+    background: #44a295;
     color: white;
     width: 15%;
     padding-right: 20px;
     font-size: 45px;
     padding-bottom: 60px;
-    margin-top: 25px;
-    
+    margin-top: 20px;
+    padding-left: 5px;
+        
+}
+
+.scoretext{
+    background: #44a295;
+    color: white;
+    width: 15%;
+    padding-left: 5px;
+    padding-right: 20px;
+    margin-top: 20px;
+
 }
 .btnContainer{
-    height: 250px;
+    height: 220px;
     width: 200px;
     background-color: white;
     border-style: solid;
     margin-right: 3px;
+    margin-top: 25px;
 }

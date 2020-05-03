@@ -2,7 +2,7 @@
 
 var wins = 0;
 var losses = 0;
-var score = 0
+var score = 0;
 var mathRandom=""
 var randomNumber = document.querySelector(".randomNumber")
 var htmlWins = document.querySelector(".wins")
@@ -19,15 +19,16 @@ var userScore =document.querySelector(".userscore")
 
 
 function start(){
-    mathRandom = Math.floor(Math.random() * 50) + 40;
+    mathRandom = Math.floor(Math.random() * 55) + 40;
     score = 0
-    crystal1.setAttribute("value", Math.floor(Math.random() * 11));
-    crystal2.setAttribute("value", Math.floor(Math.random() * 11));
-    crystal3.setAttribute("value", Math.floor(Math.random() * 11));
-    crystal4.setAttribute("value", Math.floor(Math.random() * 11));
-
+    crystal1.setAttribute("value", Math.floor(Math.random() * 5));
+    crystal2.setAttribute("value", Math.floor(Math.random() * 5));
+    crystal3.setAttribute("value", Math.floor(Math.random() * 5));
+    crystal4.setAttribute("value", Math.floor(Math.random() * 5));
+    
 
     renderWinsAndLosses()
+    
 
     
 }
@@ -37,27 +38,32 @@ function renderWinsAndLosses(){
     htmlLosses.innerHTML = "Losses : " + losses
     htmlWins.innerHTML = "Wins : " + wins
     randomNumber.innerHTML = "" + mathRandom
-    scoreText.innerHTML= " Your Score So Far : "
+    scoreText.innerHTML= " Your Score So Far : " 
     userScore.innerHTML = "" + score
 
 }
 
 buttondDiv.addEventListener("click", function (event) {
-    var buttonValue = parseInt(event.target.getAttribute("value"))
+    var buttonValue = parseInt(event.target.getAttribute("value")+1)
     score = score + buttonValue
-  
+    
+    
    
     console.log(score);
-    if (score === mathRandom) {
+    if(score === mathRandom) {
         wins++;
         start()
+
     } else  if (score >mathRandom) {
       losses++;
         start()
+          
     }
     
     
     renderWinsAndLosses()
+
+
 
 })
 
